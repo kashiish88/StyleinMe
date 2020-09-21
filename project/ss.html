@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Fashion influencer in India | StyleinMe.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+<style>
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+	 background-image:url('bag.jpg');
+    background-position: center sticky;
+     background-attachment: fixed;
+     background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
+
+html{
+   
+    scroll-behavior: smooth;
+}
+
+               /* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    border-radius:50px;
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-image:url('bg31111.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#AFD89Fj;
+    padding: 75px 50px ;
+    height: 800px 800px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 0px 20px black;
+    text-shadow:0px 0px 20px black;
+    color:#fffcfc;
+}
+
+
+
+#home h1{
+    color:black;
+    text-align:center;
+      box-shadow:0px 0px 20px black;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */ 
+#services{
+    
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin: 34px;
+     box-shadow:0px 0px 20px black;
+    display: flex;
+}
+
+#services .box{
+    border: 3px solid black;
+    padding:  100px 34px;
+    margin: 55px 55px;
+    border-radius: 50px;
+    background:white;
+    margin-bottom: 20px;
+   box-shadow:0px 0px 20px black;
+}
+
+#services .box img{
+   height: 160px;
+   border: 10px;
+   border-color:black;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    color:black;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Clients Section */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ 
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section 
+#contact{
+     
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:white;
+    box-shadow:0px 0px 20px black;
+    position: relative;
+}
+*/
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+
+}
+#contact-box{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+   box-shadow:0px 0px 20px black;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    color: black;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    color:#1B5E20;
+    font-size: 1.9rem;
+    padding: 15px;
+   
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 10px purple;
+    background-color:black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow:0px 0px 20px black;
+}
+
+.center{
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+   
+    <nav id="navbar">
+        <div id="logo">
+            <img src="C:\Users\kn\Desktop\kk\project\logo.png" alt="StyleinMe.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+   
+ 
+        <h1 class="h-primary"><u>Welcome to StyleinMe</u></h1>
+        <p><i>....Fashion Fades But Style Is Eternal....</i> </p>
+        <p><h2><b>BE THE CHANGE...BE THE YOU</b></h2> </p>
+        <button class="btn">Check out Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">_Get To Know_</h1>
+        <div id="services">
+            <div class="box">
+                <img src="C:\Users\kn\Desktop\kk\project\women.jpg" alt="girls.jpg">
+                <h2 class="h-secondary center">Womens Fashion</h2>
+                <p class="center">Today womens clothing is a line of ultimate representation of a womens body confidence that will make her all the more stylish and glamorous. Find
+                about the lessons of womens clothing and the cardinal rules of dressing up in relation to your body shape as you read on.
+                dressing up sexy dosen't always mean micro mini skirts and super tight tube tops. Try on some sassy classic looks. </p>
+            </div>
+            <div class="box">
+                <img src="C:\Users\kn\Desktop\kk\project\men.jpg" alt="boys.jpg">
+                <h2 class="h-secondary center">Mens Fashion</h2>
+                <p class="center">the 21st century is honestly a blessing foe men. They can no longer be considered being backward in fashion , rather there has been a rise to
+                certain potency in their sexuality and gender with a revolution in clothing and style. An increase in influential new designers has
+                has questioned the fundamentals of appreals and has lead to a novel line of clothing style for the postmodern male.</p>
+            </div>
+            <div class="box">
+                <img src="C:\Users\kn\Desktop\kk\project\kid.jpg" alt="kids">
+                <h2 class="h-secondary center">Kids Fashion</h2>
+                <p class="center">Childern's clothing is often more casual than adult clothing,fit for play and rest.  more resently,however, a lot of childernswear is heavily
+                influenced by trends in adult fashion. Due to the rise of social media platforms such as instagram, celebrities and fashion bloggers
+                have been use their accounts to post pictures of their children's.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="C:\Users\kn\Desktop\kk\project\logo4.png" alt="HM">
+            </div>
+            <div class="client-item">
+                <img src="C:\Users\kn\Desktop\kk\project\logo1.png" alt="amazon">
+            </div>
+         
+            <div class="client-item">
+                <img src="C:\Users\kn\Desktop\kk\project\logo2.png" alt="myntra">
+            </div>
+            <div class="client-item">
+                <img src="C:\Users\kn\Desktop\kk\project\logo3.png" alt="flipkart">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">NAME: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-MAIL: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">MESSAGE: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+   <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.StyleinMe.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
+
